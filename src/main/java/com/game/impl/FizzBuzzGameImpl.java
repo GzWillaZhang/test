@@ -21,7 +21,7 @@ public class FizzBuzzGameImpl implements IFizzBuzzGame{
 				}else if(i%5==0) {
 					numberList.add("Buzz");
 				}else {
-					numberList.add(i+"");
+					numberList.add(Integer.toString(i));
 				}
 			}
 		}
@@ -41,7 +41,7 @@ public class FizzBuzzGameImpl implements IFizzBuzzGame{
 				}else if(i%5==0 || Utils.isContainStr(i+"","5")) {
 					numberList.add("Buzz");
 				}else {
-					numberList.add(i+"");
+					numberList.add(Integer.toString(i));
 				}
 			}
 		}
